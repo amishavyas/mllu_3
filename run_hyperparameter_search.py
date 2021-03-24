@@ -43,7 +43,7 @@ test_data = boolq.BoolQDataset(test_df, tokenizer)
 ## training and tuning the model. Consult the assignment handout for some
 ## sample hyperparameter values.
 
-training_arg = transformers.TrainingArguments(num_train_epochs = 8, learning_rate = 5e-5, output_dir = '', evaluation_strategy = "epoch", per_device_train_batch_size = 8) 
+training_arg = transformers.TrainingArguments(num_train_epochs = 8, learning_rate = 5e-5, output_dir = 'scratch/adv312/', evaluation_strategy = "epoch", per_device_train_batch_size = 8) 
 
 
 ## TODO: Initialize a transformers.Trainer object and run a Bayesian
